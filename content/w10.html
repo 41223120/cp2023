@@ -142,7 +142,96 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W5 << <a href='W5.html'>Previous</a> <a href='w13.html'>Next</a> >> w13<br /><h1>w10</h1><br />W5 << <a href='W5.html'>Previous</a> <a href='w13.html'>Next</a> >> w13</div>
+    <div id="tipue_search_content">W5 << <a href='W5.html'>Previous</a> <a href='w13.html'>Next</a> >> w13<br /><h1>w10</h1>
+<p><span>項目1</span>到<span>項目3</span>就是各組必須在分組網站, 利用組員分工學習的方式, 將計算機程式的教學內容及作業進行整理. 且各組員所分配到的工作必須先在個人網站中整理後, 再放入各分組網站中.</p>
+<p>w11: 針對 s1511 伺服器, 新增別名 (在 DNS 術語中稱為 CNAME) s, 因此可以透過<span> </span><a href="https://s.cycu.org/~pj2022/cpnote">https://s.cycu.org/~pj2022/cpnote</a><span> </span>擷取工作站室中的課堂筆記靜態網頁.</p>
+<p>使用 Letsencrypy 中的<span> </span><span>certbot certonly -d s1511.cycu.org -d s.cycu.org</span><span> </span>指令, 執行之前可以利用 sudo /etc/init.d/nginx stop 關掉 nginx, 並在上述擴充網域數位簽章的過程, 讓 certbot 指令啟動 local web server 進行主機認證, 即透過登記在 DNS 伺服器中的 IPv6 address 確認主機位址.</p>
+<p>擴增伺服器別名後, 以 sudo /etc/init.d/nginx start 重新啟動全球資訊網伺服器, 並且以 sudo /etc/init.d/stunnel4 restart 重新啟動 https 代理伺服器.</p>
+<p><span>項目1</span>: 如何快速設定電腦輔助設計室中的網路 - 採 IPv6 網路設定.</p>
+<p>請檢查隨身碟中的網路設定程式, 確認帶有可攜程式環境以及網路設定相關檔案.</p>
+<p>目的是能夠在啟動隨身系統之後, 可以透過 rsa private key 以 SSH 取下個人倉儲, 並能啟動編輯後轉檔, 擁有推送回 github 的權限.</p>
+<p>各組組長能夠在取下分組倉儲後, 以個人 IPv6 位址啟動後, 允許分組組員登入修改網頁內容, 並透過組長的 rsa private key 推送回 github.</p>
+<p>個人與分組組員能在近端編寫 C 程式, 完成編譯連結後將程式碼與結果放入網頁, 並編寫相關心得報告.</p>
+<p>以上近端操作流程, 也可以在 s1511 與 Replit 伺服器上進行個人與分組倉儲及網頁的改版.</p>
+<p><a href="https://mde.tw/cpnote/downloads/w11_1a.7z">w11_1a.7z</a> (第十一週 1a 上課時建立的共用網路設定檔案)</p>
+<p><span>wink_ffmpeg.reg 設定檔案內容:</span></p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_774808">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">Windows Registry Editor Version 5.00</code></div>
+<div class="line number2 index1 alt1"><code class="js spaces"> </code> </div>
+<div class="line number3 index2 alt2"><code class="js plain">[HKEY_CURRENT_USER\SOFTWARE\Debugmode]</code></div>
+<div class="line number4 index3 alt1"><code class="js spaces"> </code> </div>
+<div class="line number5 index4 alt2"><code class="js plain">[HKEY_CURRENT_USER\SOFTWARE\Debugmode\Wink\Settings]</code></div>
+<div class="line number6 index5 alt1"><code class="js string">"FfmpegPath"</code><code class="js plain">=</code><code class="js string">"y:\\ffmpeg.exe"</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><a href="https://mde.tw/cadnote/downloads/2a_w10_start_ipv6_wink_reg.7z">2a_w10_start_ipv6_wink_reg.7z</a><span> </span>(可以將此<span> </span><span>wink 登錄設定檔</span>, 連同<span>網路設定</span>,<span> </span><span>Zoomit 啟動</span>與<span> </span><span>putty setting</span><span> </span>設定, 以<span> </span><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-import">reg import</a><span> </span>指令整合至 tinyc 可攜程式系統的 start_ipv6.bat 中).</p>
+<p><span>以下為設定 w11_1a.mp4 的過程 (<a href="https://mde.tw/cpnote/downloads/w11_1a_1.txt">w11_1a_1.txt</a></span><span>):</span></p>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-mce-fragment="1" data-varname="winkVideoData_w11_1a_1" height="630" muted="true" width="1008"></video></div>
+<p>w11_1b_1 操作影片,<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ETwcHtj1JA1JqynzTDnVwdoB5wLg1ZyLWDMEj0DUTXHGYQ?e=gdN1Hg">w11_1b.wnk 下載</a><span> </span>(需要密碼)</p>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-mce-fragment="1" data-varname="winkVideoData_w11_1b_1" height="630" muted="true" width="1008"></video></div>
+<p>w11_1a 已經登入 s.cycu.org 的學員名單: <a href="https://mde.tw/cpnote/downloads/w11_1a_s_server_login.txt">w11_1a_s_server_login.txt</a>, 請問<span>如何</span>按照學號列出 w11 已經會登入 s.cycu.org 的學員名單? (<a href="https://mde.tw/cpnote/downloads/w11_1b_s_server_login.txt">w11_1b_s_server_login.txt</a>)</p>
+<p>已知: semester 變數,  1121 為 112 學年第 1 學期</p>
+<p>courseno 變數, 1a:<span> </span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0813&amp;column=True">0813</a>, 1b:<span> </span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0826&amp;column=True">0826</a>, 2a:<span> </span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0838&amp;column=True">0838</a>, 2b:<span> </span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0851&amp;column=True">0851</a> (以 demo 帳號 AT stud.cycu.org 中的<span> </span><a href="https://stackoverflow.com/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions">nfulist</a><span> </span>網際程式直接進入學校教務主機擷取修課學員名單.)</p>
+<p>使用 Brython 讀取登入歷程記錄檔案後, 可以<a href="https://mde.tw/cpnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/cd771830cae634d399bb69b5c60daaf1c6c3669f/w11_1a_read_last_w.py">按照時間先後次序列出登入者名單</a>.</p>
+<p>也可以按照學號排序, 列出<span> </span><a href="https://mde.tw/cpnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/5ea1b4b6aaa71e1054611c1e41d5fe752315867b/w11_1a_read_last_w.py">w11 已經登入 s1511 主機的 1a 學員名單</a>(即時執行)或將資料取出: <a href="https://mde.tw/cpnote/downloads/w11_1a_login_s1511_users.txt">w11_1a_login_s1511_users.txt</a> (<a href="https://mde.tw/cpnote/downloads/w11_1b_login_s1511_users.txt">w11_1b_login_s1511_users.txt</a>)</p>
+<p>接下來該如何利用程式方法, 得知使用者已經設定 rsa keys? </p>
+<p>假如能夠使用程式進入 s.cycu.org 讀取各用戶的 .ssh/id_rsa.pub, 就可以知道是否該用戶已經建立 rsa keys. 但是必須在 s.cycu.org 主機中設法建立網際程式, 並參考<a href="https://stackoverflow.com/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions">這裡</a>的說明, 就可以根據各班學員名單逐一進入各用戶的目錄查驗其帳號下是否已經建立 id_rsa.pub 檔案.</p>
+<hr/>
+<p><span>項目2</span>: 請分別利用 Replit、s1511.cycu.org 或 localhost 維護個人與分組的網站內容, 並比較不同方法開發計算計程式的優缺點.</p>
+<p><span>Replit</span><span> </span>必須先在 Github 安裝 Replit Application 授權之後, 再 import 倉儲.</p>
+<p>import 倉儲後, 必須先設定 Run 執行內容, 取下 submodule, 並安裝倉儲編輯所需的模組以及設定 secrets 頁面中的 config 變數後, 才能啟動編輯網頁.</p>
+<p><span>s1511</span><span> </span>則需要先設定 keys 與 session config, 然後才能將倉儲以 SSH clone 至個人帳號下, 修改個人或分組所分配到的內部連網埠號後, 以 python3 server.py 執行網頁編輯. 也可透過 acp 設法讓動態與靜態網站內容同步.</p>
+<p><span>localhost</span><span> </span>則可以使用 s1511 中的 private key, 經由 puttygen 轉檔後使用, 以 SSH clone 至個人隨身碟後, 可以利用 cms 啟動編輯網站, 修改內容並轉為靜態網站後, 以 acp 將改版資料新增提交推送到 Github. 若修改倉儲中的 init.py, 置入所在電腦的外部 IPv6 位址, 則可以 cms 啟動後, 修改管理者密碼, 讓其他組員連線至所啟動的動態或靜態網站內容.</p>
+<p>各學員在以上採多個不同方式維護個人與分組網站的過程, 可以在改版之前先行 git pull, 以減少合併的內容.</p>
+<p>在 Windows 使用 pelican 建立網誌必須 pip install tzdata, 否則無法取得 TIMEZONE 設定.</p>
+<p><span>項目3</span>: 程式練習:</p>
+<p><span>w8 之前所指令的程式 C 練習作業</span>:</p>
+<p><a href="https://mde.tw/cpnote/content/%E4%B8%8A%E8%AA%B2%E5%85%A7%E5%AE%B9.html">上課內容</a>中的 Exercises</p>
+<p><a href="https://mde.tw/cpnote/content/w2-w5.html">w2-w5</a><span> </span>週任務中的 Exercises</p>
+<p><a href="https://mde.tw/cpnote/content/w6-w7.html">w6-w7</a><span> </span>週任務中的練習一與練習二</p>
+<p>請利用 C 結合 gd 繪圖程式庫, 畫出<span> </span><a href="https://en.wikipedia.org/wiki/Flag_of_China">PROC</a>(<a href="https://en.wikipedia.org/wiki/Flag_of_China#/media/File:Flag_of_China_(construction_sheet).svg">規格</a>),<span> </span><a href="https://en.wikipedia.org/wiki/Flag_of_the_United_Kingdom">United Kingdom</a>(<a href="https://en.wikipedia.org/wiki/Flag_of_the_United_Kingdom#/media/File:Flag_of_the_United_Kingdom_(1-2)_(construction_sheet).svg">規格</a>),<span> </span><a href="https://en.wikipedia.org/wiki/Flag_of_Japan">Japan</a>(<a href="https://en.wikipedia.org/wiki/Flag_of_Japan#/media/File:Construction_sheet_of_the_Japanese_flag_EN.svg">規格</a>)與<span> </span><a href="https://en.wikipedia.org/wiki/Flag_of_South_Korea">South Korea</a>(<a href="https://en.wikipedia.org/wiki/Flag_of_South_Korea#/media/File:Flag_of_South_Korea_(construction_sheet).svg">規格</a>) Flags.</p>
+<p>參考:</p>
+<p><a href="https://mde.tw/cpnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/2656b22351c7784cf50380a1095aa4821c728166/cp2023_roc_flag.py">ROC flag</a> in Brython,<span> </span><a href="https://mde.tw/cpnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/53f31755db24d1acc04036f808f5a4f276648e61/cp2023_proc_flag.py">PROC flag</a><span> </span>in Brython,<span> </span><a href="https://mde.tw/cpnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/8c5cd1cde1d51d6d31f7ed39d462d71409394143/cp2023_usa_flag.py">USA flag</a><span> </span>in Brython.</p>
+<p>graphics library examples:<span> </span><a href="https://github.com/libgd/libgd/tree/master/examples">1</a>,<span> </span><a href="https://libgd.github.io/">2</a>,<span> </span><a href="https://github.com/nayuki/QR-Code-generator/tree/master/c">3</a>,<span> </span><a href="https://github.com/ricmoo/QRCode">4</a>.</p>
+<p>各分組成員協同將<span> </span><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EWd1cR2zOStOjVSduSw6pQMBv1fB6tWu-P9qfVH2YxbDPw?e=uOZW7N">jsliu_c_programming.pdf</a><span> </span>(需要下載密碼) 內容整理後, 放入各分組網站.</p>
+<p><span>上述以 C 語言編寫的程式, 假如採用 Javascript 或 Python 語言編寫, 對於機械與機電整合設計工程師, 分別有那些不同的應用範圍?</span></p>
+<p><span>w9 程式練習</span>:</p>
+<p>2b w8 作業: 請根據 <a href="https://mde.tw/cadnote/downloads/cad2023_2b_w8.txt">cad2023_2b_w8.txt</a> 檔案中的內容, 透過程式的讀取與篩選, 按照時間先後, 列出 2b 修課學員中已經登入 s1511.cycu.org 的學號. (修課學員名單 2a: <a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0838&amp;column=True">0838</a>, 2b: <a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0851&amp;column=True">0851</a>)</p>
+<p>假如在近端處理, 必須同時儲存兩個檔案後, 進行資料選取:</p>
+<p><a href="https://mde.tw/cpnote/downloads/get_stud_num_from_last_data.py">get_stud_num_from_last_data.py</a> (若採 Brython 編寫, 可以直接<a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/f9f2fd6819ae9553d51990901aa694073d51439a/get_stud_num_from_last_data.py">列出結果</a>, 依照登入時間先後排序, 其中 41123227 為管理者最早測試時登入, 若採用 ANSI 編寫:<span> </span><a href="https://mde.tw/cpnote/downloads/c_parse_last_cp2023.7z">c_parse_last_cp2023.7z</a>)</p>
+<hr/>
+<p>1a 上課時所建立的檔案 (已經在 w10 2b 上課時改為系上 DNS 設定):</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ER4EWo4ulCRJhdNs0l9d1tsBek7ejh2UQbroue_ue0NnHg?e=yvGgge">cadlab_network_setting.7z</a><span> </span>(需要下載密碼) - 電腦輔助設計室網路設定批次與 Powershell 檔案 (註: 使用中華電信 IPv6 DNS 設定, w10 星期四之後無法在校網使用 hinet IPv6 DNS server 設定).</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ESCcmplVTVxJnJYZ2pJWh-oBFWsDJxxSYzVh_5LD5Oa5Gg?e=1EysLk">w10_2b_cadlab_network_setting.7z</a><span> </span>(需要下載密碼) - 電腦輔助設計室網路設定批次與 Powershell 檔案.</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EV5P-1cv-y1Ih5zFT9LyTy0B6vGwNfDVlXYescPWAcMliw?e=LTUnq7">tinyc.7z</a><span> </span>(需要下載密碼) - 使用 Tiny C Compiler 編譯 C 程式, 包含 gd 與 gnuplot.</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EYLeiM_NMzFHiKnUWpcO9pwBHxwDNjNDC-4F3h_d761wMQ?e=NMdPpv">python3114_git_putty.7z</a><span> </span>(需要下載密碼) - 將近端 cmsimde 啟動並改版後推向 Github 所需的檔案.</p>
+<hr/>
+<p>線上簡報、網誌與多媒體影片製作工具:</p>
+<p><a href="https://leo-editor.github.io/leo-editor/">Leo Editor</a><span> </span>(<a href="https://groups.google.com/g/leo-editor">討論群組</a>) 為大綱管理系統, 可以當作程式開發的 IDE (Integrated Development Environment) 使用, 可用來編輯 reveal.js 簡報檔案中的 html 與 markdown, 也可用來編輯 Pelican 網誌 markdown 與轉檔, 並且在電腦輔助設計與分析過程中, 可以用來解讀 CoppeliaSim XML 格式檔案.</p>
+<p>因為 Python 3.12.0 環境下 Leo Editor 還無法正常透過 pip 安裝, 因此必須手動安裝 PyQt5 之後, 再使用 pip install leo, 所完成的 Python 3.12.0: <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EYf6RiAqXAFJllAizi_-iZ4BT9ZEn8-bT2V8TVjd9p446Q?e=NSCciC">Python312_leo_664_PyQt5.7z</a><span> </span>(需要下載密碼)</p>
+<p><a href="https://www.debugmode.com/wink.html">Wink</a><span> </span>為操作流程影片製作套件, 可以在電腦操作過程, 儲存關鍵頁面與滑鼠點擊區域後, 加上輔助文字說明後製作成 mp4 影片檔.</p>
+<p><a href="https://github.com/ShareX/ShareX/releases">ShareX</a><span> </span>為螢幕畫面取像或錄影套件, 可以擷取電腦畫面任一區域存為影像檔, 或者結合語音說明與滑鼠操作錄製說明影片.</p>
+<p><a href="https://github.com/obsproject/obs-studio/releases">OBS</a><span> </span>為電腦廣播製作系統, 可以結合各種語音、圖像與影片製作出多元的電腦操作說明影片.</p>
+<p>Wink 與 ShareX 都需要<span> </span><a href="https://ffmpeg.org/download.html#build-windows">ffmpeq.exe</a>.</p><br />W5 << <a href='W5.html'>Previous</a> <a href='w13.html'>Next</a> >> w13</div>
         
     <!-- footer -->
       <div class="container">
