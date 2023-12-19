@@ -2,7 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='w6.html'>w6</a><li><a href='replit.html'>replit</a><li><a href='W5.html'>W5</a><li><a href='w9.html'>w9</a><li><a href='w4.html'>w4</a><li><a href='W3.html'>W3</a><li><a href='w2.html'>w2</a><li><a href='MSD.html'>MSD</a><li><a href='w10.html'>w10</a><li><a href='w12.html'>w12</a><li><a href='w13~w15.html'>w13~w15</a><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='我的作業.html'>我的作業</a><ul class='dropdown'><li><a href='w6.html'>w6</a><li><a href='w5.html'>w5</a><li><a href='w9.html'>w9</a><li><a href='w4.html'>w4</a><li><a href='W3.html'>W3</a><li><a href='w2.html'>w2</a><li><a href='w10.html'>w10</a><li><a href='w12.html'>w12</a><li><a href='w13.html'>w13</a><li><a href='w15.html'>w15</a></li></ul><li><a href='replit.html'>replit</a><li><a href='MSD.html'>MSD</a><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -173,7 +173,7 @@ img.add_border {
 <div class="line number1 index0 alt2"><code class="js plain">ccopts=-pedantic -Os</code></div>
 <div class="line number2 index1 alt1"><code class="js preprocessor">#cc=g++ $(ccopts) -c $(FileNameExt) -o $(FileName).o</code></div>
 <div class="line number3 index2 alt2"><code class="js preprocessor">#ccc=gcc $(ccopts) -c $(FileNameExt) -o $(FileName).o</code></div>
-<div class="line number4 index3 alt1"><code class="js plain">cc=tcc.exe -run </code></div>
+<div class="line number4 index3 alt1"><code class="js plain">cc=tcc.exe -run</code></div>
 <div class="line number5 index4 alt2"><code class="js plain">ccc=tcc.exe -o a.out</code></div>
 <div class="line number6 index5 alt1"> </div>
 <div class="line number7 index6 alt2"><code class="js plain">make.command=make</code></div>
@@ -273,28 +273,28 @@ img.add_border {
 <div class="line number1 index0 alt2"><code class="cpp comments">/* Read in two integers , add them and display the answer */</code></div>
 <div class="line number2 index1 alt1"><code class="cpp preprocessor">#define _CRT_SECURE_NO_WARNINGS</code></div>
 <div class="line number3 index2 alt2"><code class="cpp preprocessor">#include&lt;stdio.h&gt;</code></div>
-<div class="line number4 index3 alt1"><code class="cpp color1 bold">int</code> <code class="cpp plain">main()</code></div>
+<div class="line number4 index3 alt1"><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">main()</code></div>
 <div class="line number5 index4 alt2"><code class="cpp plain">{</code></div>
-<div class="line number6 index5 alt1"><code class="cpp color1 bold">int</code> <code class="cpp plain">this_is_a_number1, this_is_a_number2, total;</code></div>
+<div class="line number6 index5 alt1"><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">this_is_a_number1, this_is_a_number2, total;</code></div>
 <div class="line number7 index6 alt2"><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"Please enter an integer number:\n "</code><code class="cpp plain">);</code></div>
 <div class="line number8 index7 alt1"><code class="cpp comments">/* read number in */</code></div>
-<div class="line number9 index8 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">(</code><code class="cpp functions bold">scanf</code><code class="cpp plain">(</code><code class="cpp string">"%d"</code><code class="cpp plain">, &amp;this_is_a_number1) == 1) {</code></div>
+<div class="line number9 index8 alt2"><code class="cpp keyword bold">if</code><span> </span><code class="cpp plain">(</code><code class="cpp functions bold">scanf</code><code class="cpp plain">(</code><code class="cpp string">"%d"</code><code class="cpp plain">, &amp;this_is_a_number1) == 1) {</code></div>
 <div class="line number10 index9 alt1"><code class="cpp spaces">      </code><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"%d"</code><code class="cpp plain">, this_is_a_number1);</code></div>
-<div class="line number11 index10 alt2"><code class="cpp spaces">    </code><code class="cpp plain">} </code><code class="cpp keyword bold">else</code> <code class="cpp plain">{</code></div>
+<div class="line number11 index10 alt2"><code class="cpp spaces">    </code><code class="cpp plain">}<span> </span></code><code class="cpp keyword bold">else</code><span> </span><code class="cpp plain">{</code></div>
 <div class="line number12 index11 alt1"><code class="cpp spaces">        </code><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"Failed to read integer.\n"</code><code class="cpp plain">);</code></div>
 <div class="line number13 index12 alt2"><code class="cpp spaces">    </code><code class="cpp plain">}</code></div>
 <div class="line number14 index13 alt1"> </div>
 <div class="line number15 index14 alt2"><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"You entered %d\n"</code><code class="cpp plain">, this_is_a_number1);</code></div>
 <div class="line number16 index15 alt1"><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"Please enter another number: \n"</code><code class="cpp plain">);</code></div>
-<div class="line number17 index16 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">(</code><code class="cpp functions bold">scanf</code><code class="cpp plain">(</code><code class="cpp string">"%d"</code><code class="cpp plain">, &amp;this_is_a_number2) == 1) {</code></div>
+<div class="line number17 index16 alt2"><code class="cpp keyword bold">if</code><span> </span><code class="cpp plain">(</code><code class="cpp functions bold">scanf</code><code class="cpp plain">(</code><code class="cpp string">"%d"</code><code class="cpp plain">, &amp;this_is_a_number2) == 1) {</code></div>
 <div class="line number18 index17 alt1"><code class="cpp spaces">      </code><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"%d"</code><code class="cpp plain">, this_is_a_number1);</code></div>
-<div class="line number19 index18 alt2"><code class="cpp spaces">    </code><code class="cpp plain">} </code><code class="cpp keyword bold">else</code> <code class="cpp plain">{</code></div>
+<div class="line number19 index18 alt2"><code class="cpp spaces">    </code><code class="cpp plain">}<span> </span></code><code class="cpp keyword bold">else</code><span> </span><code class="cpp plain">{</code></div>
 <div class="line number20 index19 alt1"><code class="cpp spaces">      </code><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"Failed to read integer.\n"</code><code class="cpp plain">);</code></div>
 <div class="line number21 index20 alt2"><code class="cpp spaces">    </code><code class="cpp plain">}</code></div>
 <div class="line number22 index21 alt1"><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"You entered %d\n"</code><code class="cpp plain">, this_is_a_number2);</code></div>
 <div class="line number23 index22 alt2"><code class="cpp plain">total = this_is_a_number1 + this_is_a_number2;</code><code class="cpp comments">/* add two numbers */</code></div>
 <div class="line number24 index23 alt1"><code class="cpp functions bold">printf</code><code class="cpp plain">(</code><code class="cpp string">"total is %d\n"</code><code class="cpp plain">, total);</code></div>
-<div class="line number25 index24 alt2"><code class="cpp keyword bold">return</code> <code class="cpp plain">0;</code></div>
+<div class="line number25 index24 alt2"><code class="cpp keyword bold">return</code><span> </span><code class="cpp plain">0;</code></div>
 <div class="line number26 index25 alt1"><code class="cpp plain">}</code></div>
 </div>
 </td>
@@ -302,7 +302,8 @@ img.add_border {
 </tbody>
 </table>
 </div>
-</div><br />w9 << <a href='w9.html'>Previous</a> <a href='W3.html'>Next</a> >> W3</div>
+</div>
+<br />w9 << <a href='w9.html'>Previous</a> <a href='W3.html'>Next</a> >> W3</div>
         
     <!-- footer -->
       <div class="container">
