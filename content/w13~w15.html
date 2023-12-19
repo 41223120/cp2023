@@ -1,0 +1,324 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41223120 cp2023</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41223120 cp2023</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='w6.html'>w6</a><li><a href='replit.html'>replit</a><li><a href='W5.html'>W5</a><li><a href='w9.html'>w9</a><li><a href='w4.html'>w4</a><li><a href='W3.html'>W3</a><li><a href='w2.html'>w2</a><li><a href='MSD.html'>MSD</a><li><a href='w10.html'>w10</a><li><a href='w12.html'>w12</a><li><a href='w13~w15.html'>w13~w15</a><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">w12 << <a href='w12.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>w13~w15</h1>
+<p>w13</p>
+<p>在計算機課程中學到了許多電腦內部網路的設定，以及用程式撰寫出一些有特定含義圖形，這門課程將來也能運用在很多資訊類的地方可以用程式快速成型。</p>
+<p>w15</p>
+<p># Basque的小遊戲</p>
+<p>Basque is a cross-platform top-down 2d game engine.</p>
+<p>---</p>
+<p>Running on Windows:</p>
+<p>![Basque Windows demo](demos/basque_windows_demo.gif "Basque Windows demo")</p>
+<p>Running on Mac:</p>
+<p>![Basque Mac demo](demos/basque_mac_demo.gif "Basque Mac demo")</p>
+<p>Running on Linux:</p>
+<p>![Basque Linux demo](demos/basque_linux_demo.gif "Basque Linux demo")</p>
+<p>Running in your browser (thanks to WebAssembly and Emscripten):</p>
+<p>![Basque Wasm demo](demos/basque_wasm_demo.gif "Basque Wasm demo")</p>
+<p>[Play Basque Wasm](https://htmlpreview.github.io/?https://cdn.jsdelivr.net/gh/ryanpcmcquen/basque@master/wasm/basque.html "Play Basque Wasm")</p>
+<p>Now with touch controls!</p>
+<p>---</p>
+<p>Packages for all platforms are available under the GitHub Action here:</p>
+<p>[![Compiling ...](https://github.com/ryanpcmcquen/basque/workflows/Compiling%20.../badge.svg)](https://github.com/ryanpcmcquen/basque/actions)</p>
+<p>Or on Itch:</p>
+<p>https://ryanpcmcquen.itch.io/basque</p>
+<p>---</p>
+<p>Too lazy to do local setup? You can give it a spin using Gitpod or Replit, the only downfall will be lack of audio.</p>
+<p>[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ryanpcmcquen/basque)</p>
+<p>[![Run on Replit](https://replit.com/badge/github/ryanpcmcquen/basque)](https://replit.com/github/ryanpcmcquen/basque)</p>
+<p>---</p>
+<p>#### Global keyboard shortcuts:</p>
+<p>&lt;kbd&gt;↑&lt;/kbd&gt;: Move player North</p>
+<p>&lt;kbd&gt;→&lt;/kbd&gt;: Move player East</p>
+<p>&lt;kbd&gt;↓&lt;/kbd&gt;: Move player South</p>
+<p>&lt;kbd&gt;←&lt;/kbd&gt;: Move player West</p>
+<p>&lt;kbd&gt;q&lt;/kbd&gt;: Quit</p>
+<p>&lt;kbd&gt;e&lt;/kbd&gt;: Toggle edit mode</p>
+<p>#### Edit mode shortcuts:</p>
+<p>&lt;kbd&gt;l&lt;/kbd&gt;: Toggle map library</p>
+<p>&lt;kbd&gt;Mouse button 1&lt;/kbd&gt; (left click): Place tile</p>
+<p>&lt;kbd&gt;Mouse button 2&lt;/kbd&gt; (right click): Select tile</p>
+<p>---</p>
+<p>### Why do this?</p>
+<p>Why not just use Godot/Unity/et cetera? Basque has a very different priority list than these engines. It is _not_ a generic engine. There isn't much here, but it is a good starting point if you are looking to roll your own engine, here is what it does:</p>
+<p>- Compiles cross platform (Linux/Mac/Windows/WebAssembly, see [Esoteric ports](#esoteric-ports) for other platforms).<br/>- Visual map editing (with an easy to understand plain text format).<br/>- Spritesheet animation.<br/>- Background music.<br/>- Scrolling.<br/>- Collision detection.<br/>- Rudimentary frame rate limiting.<br/>- Accepts command line arguments (currently only for enabling fullscreen mode).<br/>- Resolution detection (estimates window size to 80% of the screen or uses the full resolution for fullscreen mode, this can be switched off).<br/>- High DPI awareness. By default the game will not run in high DPI mode, but it will be aware of high DPI contexts. This prevents things from looking fuzzy with weird scaling settings.<br/>- Automated GitHub and GitLab packaging pipelines.<br/>- Scancode based movement (rather than event loop key states). This keeps the controls from being susceptible to operating system key repeat rates and delays.<br/>- Unicode (UTF-8) file path support.</p>
+<p>Everything that is here should not be considered a final or optimal solution, but rather, a simple approach that can be morphed into a better solution. At this point the engine will become more specific to the game I am building, which is why I see this as the best time to open source it. Hopefully, it can be useful to others, either as a starting point, or as a reference of some things you can accomplish with SDL2.</p>
+<p>---</p>
+<p>### Map editing/layouts/attributes:</p>
+<p>The current map system utilizes three main files:</p>
+<p>- [map_attributes.txt](assets/data/map_attributes.txt)<br/>- [map_layout.txt](assets/data/map_layout.txt)<br/>- [map_library.txt](assets/data/map_library.txt)</p>
+<p>While editing the map, you may use the visual map editor (available in `DEBUG_MODE` by pressing &lt;kbd&gt;e&lt;/kbd&gt;) or edit the text files directly. Basque checks the timestamps of the files, and will reload them if they change, you do not need to recompile or relaunch Basque to do this. `map_layout.txt` also has suffixed versions created, with the intention of supporting future redo/undo functionality. The current number of versions that are kept is 100. This is of course, configurable.</p>
+<p>`map_attributes.txt` follows the following format (all items are integers):</p>
+<p>```<br/>TILE_INDEX:<br/>{ X_CLIP, Y_CLIP }, { NORTH_BORDER, EAST_BORDER, SOUTH_BORDER, WEST_BORDER },<br/>```</p>
+<p>Comments preceded with `//` in the attributes file are allowed. The other file types do not allow comments.</p>
+<p>`map_layout.txt` and `map_library.txt` are comma separated integers, representing the tile indices. Newlines represent new rows.</p>
+<p>For example:</p>
+<p>```<br/> 0, 1, 2, 3, 4, 1, 5, _<br/> 27, 16, 16, 16, 16, 16, 17, _<br/> 27, 16, 16, 16, 16, 16, 17, _<br/> 27, 16, 28, 16, 16, 16, 17, _<br/>```</p>
+<p>The visual map editor (available in `DEBUG_MODE` by pressing &lt;kbd&gt;e&lt;/kbd&gt;) automatically writes the indices with even spacing. `_` is a shortcut for a blank tile (the index for which is configurable under `configuration.h`).</p>
+<p>`map_library.txt` is intended to be a resource for picking tiles (available in `DEBUG_MODE -&gt; EDIT_MODE` by pressing &lt;kbd&gt;l&lt;/kbd&gt;), while editing the world map (`map_layout.txt`). It has a few special properties. It will not show the player, and it always appears starting at the top left corner of the screen. It is also _not_ editable by the map editor.</p>
+<p>---</p>
+<p>### Basque currently requires:</p>
+<p>- SDL2<br/>- SDL2_image<br/>- SDL2_mixer<br/>- SDL2_ttf</p>
+<p>---</p>
+<p>### Getting SDL2 installed:</p>
+<p>#### Linux:</p>
+<p>##### apt:</p>
+<p>```<br/>sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev<br/>```</p>
+<p>##### dnf:</p>
+<p>```<br/>sudo dnf install SDL2-devel SDL2_image-devel SDL2_mixer-devel SDL2_ttf-devel<br/>```</p>
+<p>##### eopkg:</p>
+<p>```<br/>sudo eopkg install sdl2-devel sdl2-image-devel sdl2-mixer-devel sdl2-ttf-devel<br/>```</p>
+<p>##### nix:</p>
+<p>```<br/>nix-env --install SDL2 SDL2_image SDL2_mixer SDL2_ttf<br/>```</p>
+<p>Or whatever the equivalent package is for your distro.</p>
+<p>#### Mac:</p>
+<p>```<br/>brew install sdl2 sdl2_image sdl2_mixer sdl2_ttf<br/>```</p>
+<p>#### Windows:</p>
+<p>Run the script here: [install_sdl_on_windows.cmd](install_sdl_on_windows.cmd)</p>
+<p>---</p>
+<p>Or follow one of the below procedures:</p>
+<p>##### Cmd or Powershell:</p>
+<p>```<br/>nuget install sdl2.nuget -NonInteractive -ExcludeVersion -OutputDirectory C:\INCLUDE\<br/>nuget install sdl2_image.nuget -NonInteractive -ExcludeVersion -OutputDirectory C:\INCLUDE\<br/>nuget install sdl2_mixer.nuget -NonInteractive -ExcludeVersion -OutputDirectory C:\INCLUDE\<br/>nuget install sdl2_ttf.nuget -NonInteractive -ExcludeVersion -OutputDirectory C:\INCLUDE\<br/>```</p>
+<p>```<br/>mkdir C:\INCLUDE\SDL2\</p>
+<p>:: Headers:<br/>robocopy C:\INCLUDE\sdl2.nuget\build\native\include\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_image.nuget\build\native\include\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_mixer.nuget\build\native\include\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_ttf.nuget\build\native\include\ C:\INCLUDE\SDL2\</p>
+<p>:: Libs:<br/>robocopy C:\INCLUDE\sdl2.nuget\build\native\lib\x64\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_image.nuget\build\native\lib\x64\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_mixer.nuget\build\native\lib\x64\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_ttf.nuget\build\native\lib\x64\ C:\INCLUDE\SDL2\</p>
+<p>:: DLLs:<br/>robocopy C:\INCLUDE\sdl2.nuget.redist\build\native\bin\x64\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_image.nuget.redist\build\native\bin\x64\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_mixer.nuget.redist\build\native\bin\x64\ C:\INCLUDE\SDL2\<br/>robocopy C:\INCLUDE\sdl2_ttf.nuget.redist\build\native\bin\x64\ C:\INCLUDE\SDL2\<br/>```</p>
+<p>#### Cmd or Powershell as admin:</p>
+<p>```<br/>:: System DLLs:<br/>robocopy C:\INCLUDE\sdl2.nuget.redist\build\native\bin\x64\ C:\Windows\System32\ *.dll<br/>robocopy C:\INCLUDE\sdl2.nuget.redist\build\native\bin\x64\ C:\Windows\SysWOW64\ *.dll</p>
+<p>robocopy C:\INCLUDE\sdl2_image.nuget.redist\build\native\bin\x64\ C:\Windows\System32\ *.dll<br/>robocopy C:\INCLUDE\sdl2_image.nuget.redist\build\native\bin\x64\ C:\Windows\SysWOW64\ *.dll</p>
+<p>robocopy C:\INCLUDE\sdl2_mixer.nuget.redist\build\native\bin\x64\ C:\Windows\System32\ *.dll<br/>robocopy C:\INCLUDE\sdl2_mixer.nuget.redist\build\native\bin\x64\ C:\Windows\SysWOW64\ *.dll</p>
+<p>robocopy C:\INCLUDE\sdl2_ttf.nuget.redist\build\native\bin\x64\ C:\Windows\System32\ *.dll<br/>robocopy C:\INCLUDE\sdl2_ttf.nuget.redist\build\native\bin\x64\ C:\Windows\SysWOW64\ *.dll<br/>```</p>
+<p>##### Old school:</p>
+<p>1. Download the latest VC development files from: https://libsdl.org</p>
+<p>2. Place the entire contents of `include` and `lib` under `C:\INCLUDE\SDL2`.</p>
+<p>3. Copy all DLLs under `lib` to `C:\Windows\System32` and `C:\Windows\SysWOW64`.</p>
+<p>4. Repeat for _SDL2_image_, _SDL2_mixer_, and _SDL2_ttf_.</p>
+<p>5. Profit.</p>
+<p>---</p>
+<p>### Compiling:</p>
+<p>#### Linux &amp; Mac:</p>
+<p>```<br/>make<br/>```</p>
+<p>#### Windows:</p>
+<p>```<br/>nmake<br/>```</p>
+<p>---</p>
+<p>### Packaging:</p>
+<p>To produce a zip containing the binary and all assets, run the below commands.</p>
+<p>This should run on any system, as it includes SDL2 and the like,<br/>but every system is different, so nothing is guaranteed.</p>
+<p>#### Linux:</p>
+<p>```<br/>make &amp;&amp; make --always-make linux<br/>```</p>
+<p>#### Mac:</p>
+<p>```<br/>make &amp;&amp; make --always-make mac<br/>```</p>
+<p>#### Windows:</p>
+<p>```<br/>nmake &amp;&amp; nmake /a windows<br/>```</p>
+<p>#### WebAssembly (requires emsdk: https://github.com/emscripten-core/emsdk):</p>
+<p>```<br/>make --always-make wasm<br/>```</p>
+<p>---</p>
+<p>### Running:</p>
+<p>After [compiling](#compiling) for your platform, you can launch with `./basque` (or `basque.exe` on Windows). Passing `-f` or `--fullscreen` will launch the app in fullscreen, rather than the resolution specified in [configuration.h](source/configuration.h).</p>
+<p>### Esoteric ports:</p>
+<p>**BSD**:</p>
+<p>![Basque on BSD](https://user-images.githubusercontent.com/772937/91080734-f26c7400-e5fa-11ea-91bd-a1b00f589326.jpg "Basque on BSD")</p>
+<p>**Pocketchip**:</p>
+<p>![Basque on a PocketCHIP](https://user-images.githubusercontent.com/772937/91081932-bf2ae480-e5fc-11ea-8f92-d393e08b007a.gif "Basque on a PocketCHIP")</p>
+<p>**Haiku**:</p>
+<p>![Basque on Haiku](https://user-images.githubusercontent.com/772937/93433807-26def300-f87c-11ea-8b75-166ba7297b4f.png)<br/>![Basque on Haiku](https://user-images.githubusercontent.com/772937/93433806-26465c80-f87c-11ea-824a-6afd19c35cc3.png)</p>
+<p>**AmigaOS 4.1**:</p>
+<p>![Basque on AmigaOS](https://user-images.githubusercontent.com/82057491/113767469-63deda00-9727-11eb-924d-49f895713ca8.png)</p>
+<p>Thanks to [seventhwonder-amiga](https://github.com/seventhwonder-amiga)!</p>
+<p>**Nintendo Switch**:</p>
+<p>![Basque on Nintendo Switch](https://user-images.githubusercontent.com/88618327/131042085-efa210ad-d69b-4e9a-b1ae-56c5ba966a05.jpg)</p>
+<p>Thanks to [fontire](https://github.com/fontire)!</p>
+<p>#### In progress:</p>
+<p>- ReactOS<br/>- Solaris<br/>- TempleOS</p><br />w12 << <a href='w12.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
