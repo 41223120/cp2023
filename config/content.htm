@@ -322,7 +322,29 @@ void draw_red_sun(gdImagePtr img, int x, int y, int size, int color) {
 <p>for (int i = 0; i &lt; 10; i++) {<br/> double radius = (i % 2 == 0) ? outer_radius : inner_radius;<br/> double theta = rotation_angle + i * angle;<br/> points[i].x = x + radius * cos(theta);<br/> points[i].y = y + radius * sin(theta);<br/> }</p>
 <p>// 使用 gdImageFilledPolygon 绘制星形<br/> gdImageFilledPolygon(img, points, 10, color);<br/>}</p>
 <p><img alt="" height="200" src="/images/proc_flag.png" width="300"/></p>
-<h2>w5</h2>
+<p>#include &lt;stdio.h&gt;<br/>#include &lt;gd.h&gt;<br/>#include &lt;math.h&gt;</p>
+<p>gdPoint *drawThinStar(int x, int y, int radius, int numPoints);</p>
+<p>void draw_star_circle(gdImagePtr img);</p>
+<p>int main() {<br/> // 设置图像宽度和高度<br/> int width = 900; // 可根据需要调整<br/> int height = 600; // 可根据需要调整</p>
+<p>// 创建画布<br/> gdImagePtr img = gdImageCreateTrueColor(width, height);<br/> // 设置白色背景<br/> int blue = gdImageColorAllocate(img, 0, 0, 150);<br/> gdImageFill(img, 0, 0, blue);</p>
+<p>// 确保画布成功创建<br/> if (img == NULL) {<br/> fprintf(stderr, "画布创建失败\n");<br/> return 1; // 返回错误代码<br/> }</p>
+<p>// 绘制星星圈<br/> draw_star_circle(img);</p>
+<p>// 保存图片<br/> FILE *outputFile = fopen("thin_star_circle.png", "wb");<br/> gdImagePng(img, outputFile);<br/> fclose(outputFile);</p>
+<p>// 释放内存<br/> gdImageDestroy(img);</p>
+<p>printf("星星圈已经绘制完成，保存为 thin_star_circle.png\n");</p>
+<p>return 0;<br/>}</p>
+<p>void draw_star_circle(gdImagePtr img) {<br/> int width = gdImageSX(img);<br/> int height = gdImageSY(img);</p>
+<p>// 分配颜色<br/> int yellow = gdImageColorAllocate(img, 255, 223, 0); // 中黄色</p>
+<p>// 获取中心坐标<br/> int centerX = width / 2;<br/> int centerY = height / 2;</p>
+<p>// 半径和数量<br/> int radius = height / 3;<br/> int numStars = 12;</p>
+<p>// 绘制星星圈<br/> for (int i = 0; i &lt; numStars; i++) {<br/> double angle = (2 * M_PI * i) / numStars;</p>
+<p>// 计算星星位置<br/> int starX = centerX + cos(angle) * radius;<br/> int starY = centerY + sin(angle) * radius;</p>
+<p>// 绘制五角星<br/> gdImageFilledPolygon(img, drawThinStar(starX, starY, height / 30, 5), 10, yellow);<br/> }<br/>}</p>
+<p>gdPoint *drawThinStar(int x, int y, int radius, int numPoints) {<br/> int i;<br/> static gdPoint star[11];</p>
+<p>for (i = 0; i &lt; 2 * numPoints; i++) {<br/> double outerRadius = (i % 2 == 0) ? radius * 1.5 : radius * 0.5; // 调整星星尖角的长度<br/> double angle = M_PI * i / numPoints;<br/> star[i].x = x + cos(angle) * outerRadius;<br/> star[i].y = y + sin(angle) * outerRadius;<br/> }</p>
+<p>// 将最后一个点连接到第一个点，形成闭合的多边形<br/> star[2 * numPoints] = star[0];</p>
+<p>return star;<br/>}</p>
+<p><img alt="" height="267" src="/images/thin_star_circle.png" width="400"/></p><h2>w5</h2>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">// 包含標準輸出入程式庫的標頭文件
 // https://blog.csdn.net/weixin_38468077/article/details/101069365
 // http://www.gnuplot.info/demo/
