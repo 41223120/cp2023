@@ -2177,7 +2177,7 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p></p>
 <p><!-- 程式執行 ouput 區 --></p>
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
-<h1>語言練習</h1>
+<h1>ANSIC</h1>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">//#include &lt;stdio.h&gt;將sidio.h的檔案內容加進來
 //int main()
 //{}表示一個區塊的開始和結束
@@ -2264,6 +2264,23 @@ int main() {
     return 0;
 }</pre>
 <p><img alt="" height="259" src="/images/12.c.png" width="292"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+int main() {
+    int i; // Declare variable for loop counter
+
+    printf("Even numbers between 1 to 50 (inclusive):\n");
+
+    for (i = 1; i &lt;= 50; i++) 
+    {
+        if(i%2 == 0) // Check if 'i' is even
+        {
+            printf("%d ", i); // Print 'i' if it's even
+        }
+    }
+
+    return 0;
+}</pre>
+<p><span class="token comment"><br/><br/></span></p>
 <hr/>
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
