@@ -180,6 +180,7 @@ printf("  ##                  ##\n");
 
 return(0);
 }</pre>
+<p></p>
 <p><img alt="" height="100" src="./../images/3.c.png" width="140"/></p>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 
@@ -282,7 +283,23 @@ int main() {
 
   return 0;
 }</pre>
-<p><img alt="" height="137" src="./../images/70.c.png" width="706"/><br/>
+<p><img alt="" height="137" src="./../images/70.c.png" width="706"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include&lt;stdio.h&gt;
+int main()
+{
+    int x;
+
+    /* Print column names */
+    printf("Number\tSquare\tCube\n");
+    printf("=========================\n");
+
+    // Loop to calculate and print squares and cubes
+    for(x=0; x&lt;=20; x++)
+        printf("%d\t%d\t%d\n", x, x*x, x*x*x);
+
+    return 0;
+}</pre>
+<p><br/>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p><br />Brython << <a href='Brython.html'>Previous</a> </div>
         
