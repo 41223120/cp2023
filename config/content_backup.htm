@@ -1675,7 +1675,7 @@ return 0;
 </div>
 </div>
 <p></p>
-<h1>MSD</h1>
+<h2>MSD</h2>
 <p>Mass-Spring-Damper 是一個典型的物理模型, 由質量-彈簧-阻尼器等三個元件組成, 若將彈簧其拉力與變形量成正比, 若假設阻尼器的阻力大小則與其受力方向的速度成正比, 根據牛頓運動定律, 就可以從物理模型的自由體圖導入系統的運動方程式. 接下來就要利用計算機程式, 解此一系統的微分方程式.</p>
 <p>計算機程式課程主要從基本的 C 語法開始, 設法利用數值分析法解簡單的<span> </span><a href="https://en.wikipedia.org/wiki/Mass-spring-damper_model">mass-spring-damper</a><span> </span>運動方程式, 並將質量運動的位移與速度, 以 Gnuplot 畫出後, 將 C 程式改寫為 Javascript, 以便能直接將質量運動的位移與速度圖顯示在網頁中.</p>
 <p><img caption="false" height="159" src="https://mde.tw/cpnote/images/mass_spring_damper.png" width="250"/></p>
@@ -1894,8 +1894,7 @@ return 0;
 <p><img alt="" height="200" src="https://mde.tw/cpnote/images/motion_plot.png" width="400"/></p>
 <p>假如程式中需要使用數學函數運算則可 #include &lt;math.h&gt;, 並在編譯時納入 -lm, 亦即連結數程式庫.</p>
 <p>cc ex_with_math.c -lm -o ex_with_math</p>
-<p>然後以 ./ex_with_math 執行</p>
-<h1>Brython</h1>
+<p>然後以 ./ex_with_math 執行</p><h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
@@ -2411,6 +2410,6 @@ int main ()
     for (a = 1, b = 100; a &lt;= 37, b &gt;= 0; a += 5, b -= 10)
         printf("a=%d \t b=%d\n", a, b);
 }</pre>
-<p><img alt="" height="214" src="/images/113.c.png" width="252"/><br/>
+<p><img alt="" height="214" src="/images/113.c.png" width="252"/></p>
+<br/><br/><br/><br/><br/><br/>c_ex
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
-</p>
