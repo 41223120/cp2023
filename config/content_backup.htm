@@ -2505,6 +2505,35 @@ printf( "j = %d \n", j );
 }
 }</pre>
 <p><img alt="" height="130" src="/images/8.ccc.png" width="251"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+double getmarks(double pupils[]);
+int main()
+{
+ double pupil;
+ /* Array with marks for class is preset in the main part of the
+program */
+ double marks[] = { 10.6, 23.7, 67.9, 93.0, 64.2, 33.8 ,57.5 ,82.2
+,50.7 ,45.7 };
+ /* Call function getmarks. The function returns the max marks which
+is then stored in pupil */
+ pupil = getmarks(marks);
+ printf("Max mark is = %f", pupil);
+ return 0;
+}
+double getmarks(double pupils[])
+{
+ int i;
+ double highest;
+ highest = 0;
+ /* Go through all the pupils in turn and store the highest mark */
+ for (i = 0; i &lt; 6; ++i)
+ {
+ if (highest &lt; pupils[i])
+ highest = pupils[i];
+ }
+ return highest; /* returns the value in highest to where the function
+was called */
+}</pre>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include&lt;stdio.h&gt;
 int main()
 {
