@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <conio.h>
 void main()
 {
-char ch;
-printf( "input a char:" );
- scanf( "%c", &ch );
-if( i == 'a' )
-printf( " You pressed 'a' " );
+int i, j;
+for ( i = 0, j = 10; i < 6; i++, j++ )
+{
+printf( "i = %d, ", i );
+printf( "j = %d \n", j );
+}
 }
