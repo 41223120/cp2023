@@ -2505,6 +2505,20 @@ printf( "j = %d \n", j );
 }
 }</pre>
 <p><img alt="" height="130" src="/images/8.ccc.png" width="251"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include&lt;stdio.h&gt;
+int main()
+{
+ int this_is_a_number1, this_is_a_number2, total;
+ printf("Please enter an integer number:\n ");
+ scanf("%d", &amp;this_is_a_number1); /* read number in */
+ printf("You entered %d\n", this_is_a_number1);
+ printf("Please enter another number: \n");
+ scanf("%d", &amp;this_is_a_number2); /* read number in */
+ printf("You entered %d\n", this_is_a_number2);
+ total = this_is_a_number1 + this_is_a_number2;/* add two numbers */
+ printf("total is %d\n", total);
+ return 0;
+}</pre>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">int main()
 {
 int a,b;
